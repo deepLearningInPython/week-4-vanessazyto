@@ -98,7 +98,7 @@ word_frequencies_modified = {token: tokens.count(token) for token in tokens if t
 
 # Your code here:
 # -----------------------------------------------
-def token_counts(string: str, k: int = 1) -> dict:
+def token_counts(string: str, k: int = 0) -> dict: # mistake here; if int = 1, then the function doesn't pass a test
     tokens = tokenize(string)
     frequencies = {token: tokens.count(token) for token in tokens if tokens.count(token) > k}
 
